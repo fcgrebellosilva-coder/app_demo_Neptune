@@ -1,0 +1,68 @@
+{
+	"id": "cf1977c5-0ccc-4d0b-b549-b5fe3ad1728b",
+	"createdAt": "2026-02-23T17:42:47.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "1a91757f-9f2b-40aa-ef49-ec17361560df",
+			"fieldName": "Title",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Title of the movie"
+		},
+		{
+			"id": "59b7305b-6729-4add-f58f-9b80b7ab2bbb",
+			"fieldName": "Year",
+			"fieldType": "integer",
+			"isUnique": false,
+			"description": "Year of movie release"
+		},
+		{
+			"id": "0963e0d9-5d8c-40cd-8a71-ef8fd5ba1d0c",
+			"fieldName": "Genre",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Genre of the movie"
+		},
+		{
+			"id": "6be1af8e-3c78-42f9-d880-c717226f41dc",
+			"fieldName": "Director",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Director of the movie"
+		},
+		{
+			"id": "d5a1d4b7-9a3a-4eba-8e19-0db421caee4b",
+			"fieldName": "Plot",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Plot of the movie"
+		},
+		{
+			"id": "c03198fc-12ed-495d-8838-0def07215814",
+			"fieldName": "Duration",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Duration of the movie"
+		},
+		{
+			"id": "0a8dbc82-9aa2-4c79-95a3-304897316a0e",
+			"fieldName": "Poster",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Url of the movie's poster"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"vectorStoreConfig": {},
+	"name": "movies",
+	"description": "Table with movies from the movie_explorer_demo",
+	"ver": "26.02.24.2100",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "a880ff1b-dbce-40c4-846d-2bb73a09a66c",
+	"generationStrategy": null,
+	"rolesRead": [],
+	"rolesWrite": []
+}

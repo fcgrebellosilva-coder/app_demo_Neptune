@@ -1,0 +1,83 @@
+{
+	"id": "2f797783-4e71-40bf-beb3-2f2265b3e2af",
+	"createdAt": "2026-02-21T17:39:09.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "91802dee-e443-40a2-e27f-04d5575f77c9",
+			"method": "GET",
+			"path": "/",
+			"description": "",
+			"parameters": [
+				{
+					"name": "apikey",
+					"description": "",
+					"required": true,
+					"inPath": false,
+					"value": "",
+					"default": "461038a8",
+					"example": ""
+				},
+				{
+					"name": "t",
+					"description": "",
+					"required": true,
+					"inPath": false,
+					"value": "",
+					"default": "",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [
+				{
+					"id": "858edec1-d727-479f-ac67-7e0778e99fed",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "fa3a0e37-c389-4d2f-a1d6-52f645273dfb",
+							"name": "",
+							"objectType": "array",
+							"items": []
+						}
+					]
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"summary": "Get operation to get movies from OMDB API"
+		}
+	],
+	"definitions": [],
+	"documentation": [],
+	"name": "movie-explorer-api",
+	"endpoint": "http://www.omdbapi.com",
+	"ver": "26.02.25.1112",
+	"version": null,
+	"description": "Api to get movies from the service OMDB APi",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "",
+	"enableProxy": true,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"enableScriptEditor": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "a880ff1b-dbce-40c4-846d-2bb73a09a66c",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}

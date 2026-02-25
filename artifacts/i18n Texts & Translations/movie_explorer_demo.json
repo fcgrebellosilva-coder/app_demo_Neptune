@@ -1,0 +1,24 @@
+{
+	"id": "cdea10b5-3b8b-4d86-87cf-8422594c3ba6",
+	"createdAt": "2026-02-23T15:22:58.000Z",
+	"createdBy": "admin",
+	"attributes": [],
+	"locales": [
+		{
+			"isoCode": "EN",
+			"locale": "en"
+		}
+	],
+	"name": "movie_explorer_demo",
+	"description": null,
+	"fallbackLocale": "EN",
+	"application": "movie_explorer_demo",
+	"ver": "26.02.23.1523",
+	"package": "a880ff1b-dbce-40c4-846d-2bb73a09a66c",
+	"active": true,
+	"deleted": false,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}

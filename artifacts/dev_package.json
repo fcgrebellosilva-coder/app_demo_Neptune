@@ -1,0 +1,103 @@
+{
+	"id": "a880ff1b-dbce-40c4-846d-2bb73a09a66c",
+	"createdAt": "2026-02-21T17:26:40.000Z",
+	"createdBy": "admin",
+	"git": {
+		"remote": "https://github.com/fcgrebellosilva-coder/app_demo_Neptune",
+		"branch": "main"
+	},
+	"name": "movie-explorer-demo",
+	"description": "App to explore movies lists and save your favorites",
+	"ver": "26.02.25.1521",
+	"enableCICD": true,
+	"internalReadOnly": false,
+	"oeVersion": null,
+	"excludeTemplateFiles": false,
+	"roles": [],
+	"apps": [
+		{
+			"id": "4a6a5426-b5b3-4bfe-9f26-369028574511",
+			"application": "movie_explorer_demo",
+			"title": "Movie Explorer Demo",
+			"description": "App demo to search movies by title and add them to a favorites movie list"
+		}
+	],
+	"api": [
+		{
+			"id": "70f1b114-bc48-40e8-9018-1a34bf6a6591",
+			"name": "movie-table-api",
+			"description": "Api to interact with movie DB",
+			"apiGroup": null
+		},
+		{
+			"id": "2f797783-4e71-40bf-beb3-2f2265b3e2af",
+			"name": "movie-explorer-api",
+			"description": "Api to get movies from the service OMDB APi",
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "cf1977c5-0ccc-4d0b-b549-b5fe3ad1728b",
+			"name": "movies",
+			"description": "Table with movies from the movie_explorer_demo"
+		}
+	],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"theme_generator": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"tile_layout": [],
+	"category": [],
+	"tilegroup_layout": [],
+	"launchpad": [],
+	"launchpad_layout": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"i18n": [
+		{
+			"id": "e103a58a-a944-4f18-a4ac-3dedaf9f2c99",
+			"name": "movie_explorer_demo_app",
+			"description": null
+		},
+		{
+			"id": "cdea10b5-3b8b-4d86-87cf-8422594c3ba6",
+			"name": "movie_explorer_demo",
+			"description": null
+		},
+		{
+			"id": "7428d564-f472-4b09-add1-152ac45f558f",
+			"name": "movie_explorer_demo",
+			"description": null
+		}
+	],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": [],
+	"theme_ui5": [],
+	"webapp": [],
+	"ui5_control": [],
+	"ai_agent": [],
+	"ai_model": [],
+	"ai_prompt": [],
+	"ai_tool": [],
+	"ai_guardrail": [],
+	"path_rewrite": [],
+	"vault": []
+}

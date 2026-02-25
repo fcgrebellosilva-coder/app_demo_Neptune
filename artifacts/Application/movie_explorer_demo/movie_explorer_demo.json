@@ -1,0 +1,1251 @@
+{
+	"id": "4a6a5426-b5b3-4bfe-9f26-369028574511",
+	"createdAt": "2026-02-23T15:21:47.000Z",
+	"createdBy": "admin",
+	"objects": [
+		{
+			"fieldNo": "85006ab5-429c-40e9-f048-17404aa97309",
+			"fieldName": "App",
+			"fieldParent": 0,
+			"fieldType": "sap.m.App",
+			"script": "",
+			"request": [],
+			"response": [],
+			"attributes": [
+				{
+					"attribute": "id",
+					"grouping": "Property",
+					"value": "app",
+					"script": "",
+					"translation": []
+				}
+			],
+			"data": [
+				{
+					"fieldNo": "99054f99-f690-4304-fe07-f39b66ee48c9",
+					"fieldName": "MovieExplorerPage",
+					"fieldParent": "85006ab5-429c-40e9-f048-17404aa97309",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Movies",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "false",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "showHeader",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "8f3015ae-f1e2-4aa9-d1f9-ed36fb72531a",
+							"fieldName": "mainPageHeader",
+							"fieldParent": "99054f99-f690-4304-fe07-f39b66ee48c9",
+							"fieldType": "sap.m.Bar",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "setCustomHeader",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "4d4e952d-87ca-4be0-d65c-f130bc998f06",
+									"fieldName": "ContentMiddle",
+									"fieldParent": "8f3015ae-f1e2-4aa9-d1f9-ed36fb72531a",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentMiddle",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "ef284810-ec28-4efd-a5a5-89059c72ba9d",
+											"fieldName": "Title",
+											"fieldParent": "4d4e952d-87ca-4be0-d65c-f130bc998f06",
+											"fieldType": "sap.m.Title",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Movies",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "fe158c57-829a-4acb-bf57-70e51eb54f50",
+									"fieldName": "ContentRight",
+									"fieldParent": "8f3015ae-f1e2-4aa9-d1f9-ed36fb72531a",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentRight",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "2203fb65-5390-404c-9a51-c32837746b53",
+											"fieldName": "favorites",
+											"fieldParent": "fe158c57-829a-4acb-bf57-70e51eb54f50",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.Button/favorites/press.js",
+													"language": "javascript",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Favorites",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://far/heart",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "347d8f7b-d82e-4c8a-8def-aa8df38cc2d1",
+							"fieldName": "SearchField",
+							"fieldParent": "99054f99-f690-4304-fe07-f39b66ee48c9",
+							"fieldType": "sap.m.SearchField",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "search",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "handleSearch(oEvent);",
+									"language": "javascript",
+									"translation": []
+								},
+								{
+									"attribute": "width",
+									"grouping": "Properties",
+									"value": "100%",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "0db20031-0593-4df2-c1de-80c7f2fed815",
+							"fieldName": "Table",
+							"fieldParent": "99054f99-f690-4304-fe07-f39b66ee48c9",
+							"fieldType": "sap.m.Table",
+							"script": "",
+							"bindingValue": "movie-table-api>/movies",
+							"bindingType": "h",
+							"bindingSource": "API",
+							"bindingParentID": "70f1b114-bc48-40e8-9018-1a34bf6a6591",
+							"bindingPathID": "ec4f3b35-2b3f-4e47-bead-2f64e1995a21",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "a78af663-ee75-41d8-e9a8-6e7cf8e92221",
+									"fieldName": "posterColumn",
+									"fieldParent": "0db20031-0593-4df2-c1de-80c7f2fed815",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "width",
+											"grouping": "Properties",
+											"value": "400px",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "83df7404-6aaa-448c-8352-ba34af5e1f66",
+											"fieldName": "Poster",
+											"fieldParent": "a78af663-ee75-41d8-e9a8-6e7cf8e92221",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Poster",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "712cdabc-dbf5-4364-fd5d-feaa4e4f3f8b",
+									"fieldName": "titleColumn",
+									"fieldParent": "0db20031-0593-4df2-c1de-80c7f2fed815",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "cfac592c-14e5-4bf2-8220-f139349a6874",
+											"fieldName": "Text1",
+											"fieldParent": "712cdabc-dbf5-4364-fd5d-feaa4e4f3f8b",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Title",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "10b56040-4db4-4605-f4eb-e8757baee3ee",
+									"fieldName": "yearColumn",
+									"fieldParent": "0db20031-0593-4df2-c1de-80c7f2fed815",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "minScreenWidth",
+											"grouping": "Properties",
+											"value": "Tablet",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "demandPopin",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "4ed60ce5-f69b-4724-94ac-cb82d92f10e6",
+											"fieldName": "Text2",
+											"fieldParent": "10b56040-4db4-4605-f4eb-e8757baee3ee",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Year",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "8973da43-9144-4018-9f94-d7aaa557e4d9",
+									"fieldName": "genreColumn",
+									"fieldParent": "0db20031-0593-4df2-c1de-80c7f2fed815",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "minScreenWidth",
+											"grouping": "Properties",
+											"value": "Tablet",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "demandPopin",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "3aa75b47-1b13-440d-9023-e6e7ec810581",
+											"fieldName": "Text3",
+											"fieldParent": "8973da43-9144-4018-9f94-d7aaa557e4d9",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Genre",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "3021afdf-a616-4db1-b1ed-7d830891e804",
+									"fieldName": "directorColumn",
+									"fieldParent": "0db20031-0593-4df2-c1de-80c7f2fed815",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "minScreenWidth",
+											"grouping": "Properties",
+											"value": "Desktop",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "demandPopin",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "88ed9d24-d6f1-4c26-c1cd-25930a8e4cc7",
+											"fieldName": "Text4",
+											"fieldParent": "3021afdf-a616-4db1-b1ed-7d830891e804",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Director",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "77d0567e-eb97-4451-ca93-a3fbb8445301",
+									"fieldName": "plotColumn",
+									"fieldParent": "0db20031-0593-4df2-c1de-80c7f2fed815",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "minScreenWidth",
+											"grouping": "Properties",
+											"value": "Desktop",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "demandPopin",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "0dc82e1a-0eda-4c2a-835e-e728c45863ba",
+											"fieldName": "Text5",
+											"fieldParent": "77d0567e-eb97-4451-ca93-a3fbb8445301",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Plot",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "9a0e867d-a6cc-475d-e974-8b1dd7319138",
+									"fieldName": "durationColumn",
+									"fieldParent": "0db20031-0593-4df2-c1de-80c7f2fed815",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "minScreenWidth",
+											"grouping": "Properties",
+											"value": "Desktop",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "demandPopin",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "202541fc-09b9-4146-a735-22da08405818",
+											"fieldName": "Text6",
+											"fieldParent": "9a0e867d-a6cc-475d-e974-8b1dd7319138",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Duration",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "8c5c0f7f-cd01-4261-c213-a3c7139f3994",
+									"fieldName": "Add",
+									"fieldParent": "0db20031-0593-4df2-c1de-80c7f2fed815",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "f80fe840-87fa-4f78-8e43-f7e686d9d83d",
+											"fieldName": "Text",
+											"fieldParent": "8c5c0f7f-cd01-4261-c213-a3c7139f3994",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Add to favorites",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "8055f534-1f19-435b-e0b5-1b03ba7de1ff",
+					"fieldName": "FavoriteMoviesPage",
+					"fieldParent": "85006ab5-429c-40e9-f048-17404aa97309",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Movies",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "false",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "showHeader",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "navButtonPress",
+							"grouping": "Events",
+							"value": "Favorites",
+							"script": "Favorites",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "ac804900-e189-472f-c353-59e271dddebf",
+							"fieldName": "mainPageHeader1",
+							"fieldParent": "8055f534-1f19-435b-e0b5-1b03ba7de1ff",
+							"fieldType": "sap.m.Bar",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "setCustomHeader",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "b0bbb23b-0f1a-495b-ba90-b253c240a221",
+									"fieldName": "ContentMiddle1",
+									"fieldParent": "ac804900-e189-472f-c353-59e271dddebf",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentMiddle",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "79a3a9c5-d3e6-4ac6-e863-6b98a8625437",
+											"fieldName": "Title1",
+											"fieldParent": "b0bbb23b-0f1a-495b-ba90-b253c240a221",
+											"fieldType": "sap.m.Title",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "My Movies",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "c9bff752-73f3-46b0-af20-0740e71f1c88",
+									"fieldName": "ContentRight1",
+									"fieldParent": "ac804900-e189-472f-c353-59e271dddebf",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentRight",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "a3be08fa-2353-4f9e-fab1-9428cfba99f8",
+											"fieldName": "explorer",
+											"fieldParent": "c9bff752-73f3-46b0-af20-0740e71f1c88",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "App.backToPage(\"MovieExplorerPage\")",
+													"script": "App.backToPage(\"MovieExplorerPage\")",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Go Back",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://nav-back",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "0ca13abe-0ee9-49aa-a231-b257e6bdedfd",
+							"fieldName": "Table1",
+							"fieldParent": "8055f534-1f19-435b-e0b5-1b03ba7de1ff",
+							"fieldType": "sap.m.Table",
+							"script": "",
+							"bindingValue": "movie-table-api>/movies",
+							"bindingType": "h",
+							"bindingSource": "API",
+							"bindingParentID": "70f1b114-bc48-40e8-9018-1a34bf6a6591",
+							"bindingPathID": "ec4f3b35-2b3f-4e47-bead-2f64e1995a21",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "488a5d2f-f019-431a-ee8b-6f3397823859",
+									"fieldName": "posterColumn1",
+									"fieldParent": "0ca13abe-0ee9-49aa-a231-b257e6bdedfd",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "width",
+											"grouping": "Properties",
+											"value": "400px",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "b0a918ee-5948-49b9-bd1a-6de7d8311528",
+											"fieldName": "Text7",
+											"fieldParent": "488a5d2f-f019-431a-ee8b-6f3397823859",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Poster",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "eb4a74e6-5479-4f40-df65-147bfc3c6d72",
+									"fieldName": "titleColumn1",
+									"fieldParent": "0ca13abe-0ee9-49aa-a231-b257e6bdedfd",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "44b6204e-6f5d-4185-b118-2d8403632a8d",
+											"fieldName": "Text8",
+											"fieldParent": "eb4a74e6-5479-4f40-df65-147bfc3c6d72",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Title",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "2e2914f5-d48b-4966-9f5e-25ae17ab531f",
+									"fieldName": "yearColumn1",
+									"fieldParent": "0ca13abe-0ee9-49aa-a231-b257e6bdedfd",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "minScreenWidth",
+											"grouping": "Properties",
+											"value": "Tablet",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "demandPopin",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "3ae26295-fa70-47c5-f0af-ae390ad11bd6",
+											"fieldName": "Text9",
+											"fieldParent": "2e2914f5-d48b-4966-9f5e-25ae17ab531f",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Year",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "91077143-0488-45eb-9eb9-388a0c5ddb98",
+									"fieldName": "genreColumn1",
+									"fieldParent": "0ca13abe-0ee9-49aa-a231-b257e6bdedfd",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "minScreenWidth",
+											"grouping": "Properties",
+											"value": "Tablet",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "demandPopin",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "c1887ff2-6713-4861-9d99-7c91798eecfb",
+											"fieldName": "Text10",
+											"fieldParent": "91077143-0488-45eb-9eb9-388a0c5ddb98",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Genre",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "8ca5feb4-781d-4413-e06f-b25f635ae4a9",
+									"fieldName": "directorColumn1",
+									"fieldParent": "0ca13abe-0ee9-49aa-a231-b257e6bdedfd",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "minScreenWidth",
+											"grouping": "Properties",
+											"value": "Desktop",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "demandPopin",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "30b5e769-ccbf-4360-83f6-521f426204c7",
+											"fieldName": "Text11",
+											"fieldParent": "8ca5feb4-781d-4413-e06f-b25f635ae4a9",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Director",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "6309463d-ab3f-4156-fd25-84e60764c0f6",
+									"fieldName": "plotColumn1",
+									"fieldParent": "0ca13abe-0ee9-49aa-a231-b257e6bdedfd",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "minScreenWidth",
+											"grouping": "Properties",
+											"value": "Desktop",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "demandPopin",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "2eaa7ddc-f0f7-4be4-b77f-cc6a4225af73",
+											"fieldName": "Text12",
+											"fieldParent": "6309463d-ab3f-4156-fd25-84e60764c0f6",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Plot",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "4fa731f1-b220-438e-e54b-b6b9d16c8429",
+									"fieldName": "durationColumn1",
+									"fieldParent": "0ca13abe-0ee9-49aa-a231-b257e6bdedfd",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "minScreenWidth",
+											"grouping": "Properties",
+											"value": "Desktop",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "demandPopin",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "0056fc25-7cd1-4fe6-9c4d-23753eb301b1",
+											"fieldName": "Text13",
+											"fieldParent": "4fa731f1-b220-438e-e54b-b6b9d16c8429",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Duration",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "da756bcb-b448-420f-c7ec-2c84207353b1",
+									"fieldName": "Delete",
+									"fieldParent": "0ca13abe-0ee9-49aa-a231-b257e6bdedfd",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "e50c3c18-5670-45fd-a1cc-3416181a358d",
+											"fieldName": "Text14",
+											"fieldParent": "da756bcb-b448-420f-c7ec-2c84207353b1",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Remove from favorites",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "e1cf61ee-9d1a-45e7-a8ee-76b9850c93ff",
+					"fieldName": "ExternalMovieApi",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "d24536bb-cd69-46a8-d4dd-eca873a91d19",
+							"fieldName": "getmovieapi",
+							"fieldParent": "e1cf61ee-9d1a-45e7-a8ee-76b9850c93ff",
+							"fieldType": "neptune.restapi",
+							"script": "",
+							"restSource": "2f797783-4e71-40bf-beb3-2f2265b3e2af",
+							"restOperation": "91802dee-e443-40a2-e27f-04d5575f77c9",
+							"request": [
+								{
+									"name": "apikey",
+									"value": "461038a8",
+									"parent": "RequestParameter214909ca-398d-41be-ffeb-78151be8c88a",
+									"expression": ""
+								},
+								{
+									"name": "t",
+									"value": "Dune",
+									"parent": "RequestParameter214909ca-398d-41be-ffeb-78151be8c88a",
+									"expression": ""
+								}
+							],
+							"response": [
+								{
+									"status": "200",
+									"dataId": "",
+									"modelFieldNo": "85df0aef-5791-432b-dbd5-3e0690ad6932"
+								}
+							],
+							"attributes": [
+								{
+									"attribute": "ajaxSuccess",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/neptune.restapi/getmovieapi/ajaxSuccess.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "ca9f6f81-b6e6-493e-c7c6-32e4f1ffb624",
+					"fieldName": "TableMovieApi",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "8ef2a178-8bec-4085-c9b1-7889edc6f82d",
+							"fieldName": "deletemovietable",
+							"fieldParent": "ca9f6f81-b6e6-493e-c7c6-32e4f1ffb624",
+							"fieldType": "neptune.restapi",
+							"description": "Delete method for movie table",
+							"script": "",
+							"restSource": "70f1b114-bc48-40e8-9018-1a34bf6a6591",
+							"restOperation": "d5020838-ec52-4bf7-914e-e805114a75ee",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "ajaxSuccess",
+									"grouping": "Events",
+									"value": "loadFavoriteMovieList()",
+									"script": "loadFavoriteMovieList()",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "c76e6b43-284e-405a-dee1-1260487dabf4",
+							"fieldName": "getmovietable",
+							"fieldParent": "ca9f6f81-b6e6-493e-c7c6-32e4f1ffb624",
+							"fieldType": "neptune.restapi",
+							"description": "Get method for movie table",
+							"script": "",
+							"restSource": "70f1b114-bc48-40e8-9018-1a34bf6a6591",
+							"restOperation": "ec4f3b35-2b3f-4e47-bead-2f64e1995a21",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "ajaxSuccess",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/neptune.restapi/getmovietable/ajaxSuccess.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "99b689af-062e-4067-a35d-dd2899a33b85",
+							"fieldName": "postmovietable",
+							"fieldParent": "ca9f6f81-b6e6-493e-c7c6-32e4f1ffb624",
+							"fieldType": "neptune.restapi",
+							"description": "Post method for movie table",
+							"script": "",
+							"restSource": "70f1b114-bc48-40e8-9018-1a34bf6a6591",
+							"restOperation": "c7351219-b472-4b1f-8cb0-50b39b022260",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "fb7f1dab-bafc-4375-fdcc-088247d68720",
+					"fieldName": "GlobalFunctions",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/GlobalFunctions.js",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"ver": "26.02.25.1456",
+	"application": "movie_explorer_demo",
+	"title": "Movie Explorer Demo",
+	"description": "App demo to search movies by title and add them to a favorites movie list",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_integration": false,
+	"ui5_chart": false,
+	"ui5_theme": "",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": null,
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"activationHistoryCount": 0,
+	"package": "a880ff1b-dbce-40c4-846d-2bb73a09a66c",
+	"apis": [
+		{
+			"id": "70f1b114-bc48-40e8-9018-1a34bf6a6591",
+			"name": "movie-table-api",
+			"ver": "26.02.25.1454"
+		},
+		{
+			"id": "2f797783-4e71-40bf-beb3-2f2265b3e2af",
+			"name": "movie-explorer-api",
+			"ver": "26.02.25.1112"
+		}
+	],
+	"i18n": []
+}
